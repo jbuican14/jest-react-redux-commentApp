@@ -2,8 +2,9 @@ import { render, screen } from '@testing-library/react';
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import App from '../App';
-import CommentBox from '../components/CommentBox.component';
+import App from 'App';
+import CommentBox from 'components/CommentBox.component';
+import CommentList from 'components/CommentList.component';
 
 // test('renders learn react link', () => {
 //   render(<App />);
@@ -15,6 +16,12 @@ it('shows a comment box', () => {
   const wrapped = shallow(<App />);
 
   expect(wrapped.find(CommentBox).length).toEqual(1);
+});
+
+it('shows a comment list', () => {
+  const wrapped = shallow(<App />);
+
+  expect(wrapped.find(CommentList).length).toEqual(1);
 });
 
 // PREVIOUS VERSION
