@@ -15,6 +15,22 @@ Test: methodologies
 
 ex. verify the text is in the text , verify text is save is display
 
+- first test
+  https://create-react-app.dev/docs/running-tests/
+  install npm install --save @testing-library/react @testing-library/jest-dom
+
+  Enzyme adapter for react 17
+  npm install enzyme
+  npm install --save-dev @wojtekmaj/enzyme-adapter-react-17
+
+~~ important for your test file setupTests.js ~~~~
+import Enzyme from 'enzyme';
+import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
+
+Enzyme.configure({ adapter: new Adapter() });
+
+Enzyme : static, shallow, fulldom
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
