@@ -36,6 +36,20 @@ document : https://create-react-app.dev/docs/importing-a-component/#absolute-imp
 
 ~~ Full Dom rendering by Enzyme ~~
 
+~~ Simulate event in Enzyme ~~
+.simulate(event[, mock]) => Self
+event is the real name from the dom
+ex. onChange is in React, we have to use 'change'
+mock object will be used to mock that event
+
+https://enzymejs.github.io/enzyme/docs/api/ReactWrapper/simulate.html
+
+call https://enzymejs.github.io/enzyme/docs/api/ReactWrapper/update.html#update--self
+update to force the instant re-render
+
+next we need to get the correct prop using prop(key)
+https://enzymejs.github.io/enzyme/docs/api/ReactWrapper/prop.html
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
