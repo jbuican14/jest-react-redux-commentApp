@@ -13,7 +13,7 @@ Test: methodologies
 - Imaging telling them here is what this piece oof code does
 - Write a test to verify each part does what you expect
 
-# ex. verify the text is in the text , verify text is save is display
+ex. verify the text is in the text , verify text is save is display
 
 # Getting Started with Create React App
 
