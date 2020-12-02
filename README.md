@@ -1,3 +1,20 @@
+Redux Design:
+reducer --> comments
+action --> save comments
+
+Design components:
+App Component
+Comment Component
+CommentList Component
+
+Test: methodologies
+
+- # Look at each individual part of your application,
+- # Imaging telling them here is what this piece oof code does
+- # Write a test to verify each part does what you expect
+
+# ex. verify the text is in the text , verify text is save is display
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
