@@ -9,9 +9,9 @@ CommentList Component
 
 Test: methodologies
 
-- # Look at each individual part of your application,
-- # Imaging telling them here is what this piece oof code does
-- # Write a test to verify each part does what you expect
+- Look at each individual part of your application,
+- Imaging telling them here is what this piece oof code does
+- Write a test to verify each part does what you expect
 
 # ex. verify the text is in the text , verify text is save is display
 
