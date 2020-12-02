@@ -34,6 +34,8 @@ Enzyme : static, shallow, fulldom
 ~~ how to import module to your test file ~~
 document : https://create-react-app.dev/docs/importing-a-component/#absolute-imports
 
+~~ Full Dom rendering by Enzyme ~~
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
