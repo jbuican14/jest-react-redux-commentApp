@@ -24,12 +24,14 @@ ex. verify the text is in the text , verify text is save is display
   npm install --save-dev @wojtekmaj/enzyme-adapter-react-17
 
 ~~ important for your test file setupTests.js ~~~~
+~~ C.20 Name the file exactly as setupTests.js
 import Enzyme from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
 Enzyme.configure({ adapter: new Adapter() });
 
-Enzyme : static, shallow, fulldom
+====== NOTE =======
+//Enzyme : static, shallow, fulldom
 
 ~~ how to import module to your test file ~~
 document : https://create-react-app.dev/docs/importing-a-component/#absolute-imports
@@ -49,6 +51,12 @@ update to force the instant re-render
 
 next we need to get the correct prop using prop(key)
 https://enzymejs.github.io/enzyme/docs/api/ReactWrapper/prop.html
+
+npm run test
+press a
+
+Introducing Root component
+reducers/**test**/comment.test.js
 
 # Getting Started with Create React App
 
