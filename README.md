@@ -58,6 +58,10 @@ press a
 Introducing Root component
 reducers/**test**/comment.test.js
 
+npm install --save axios redux-promise moxios
+
+SASS \*\* NOTE npm install node-sass@4.14.1 (version 5 is not compatible);
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
