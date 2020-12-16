@@ -13,10 +13,28 @@ class CommentBox extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-
-    this.props.saveComment(this.state.comment);
-    this.setState({ comment: '' });
+    if (this.state.comment.length > 0) {
+      this.props.saveComment(this.state.comment);
+      this.setState({ comment: '' });
+    }
   };
+
+  shouldNavAway() {
+    if (!this.props.auth) {
+      // console.log('Leave');
+      this.props.history.push('/');
+    }
+  }
+
+  componentDidMount() {
+    console.log('[componentDidMount]');
+    this.shouldNavAway();
+  }
+
+  componentDidUpdate() {
+    console.log('[componentDidUpdate]');
+    this.shouldNavAway();
+  }
 
   render() {
     return (
@@ -48,4 +66,8 @@ class CommentBox extends Component {
   }
 }
 
-export default connect(null, actions)(CommentBox);
+function mapStateToProps(state) {
+  return { auth: state.auth };
+}
+
+export default connect(mapStateToProps, actions)(CommentBox);

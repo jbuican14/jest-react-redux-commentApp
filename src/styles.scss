@@ -18,6 +18,43 @@ form {
   position: relative;
 }
 
+.navBar {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: baseline;
+}
+
+li {
+  padding-bottom: 1em;
+}
+
+li a {
+  text-decoration: none;
+
+  &::after {
+    content: '';
+    // position: absolute;
+    height: 2px;
+    background-color: green;
+    width: 0px;
+    display: block;
+    transition: width 0.3s;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+li button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+
 .button-fetch {
   position: relative;
   text-align: center;

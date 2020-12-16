@@ -18,6 +18,49 @@ form {
   position: relative;
 }
 
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+li {
+  padding-bottom: 1em;
+}
+
+li a {
+  text-decoration: none;
+}
+
+li a::after {
+  content: '';
+  height: 2px;
+  background-color: green;
+  width: 0px;
+  display: block;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+li a:hover::after {
+  width: 100%;
+}
+
+li button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+
 .button-fetch {
   position: relative;
   text-align: center;
