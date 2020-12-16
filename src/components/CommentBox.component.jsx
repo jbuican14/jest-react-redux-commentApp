@@ -19,23 +19,6 @@ class CommentBox extends Component {
     }
   };
 
-  shouldNavAway() {
-    if (!this.props.auth) {
-      // console.log('Leave');
-      this.props.history.push('/');
-    }
-  }
-
-  componentDidMount() {
-    console.log('[componentDidMount]');
-    this.shouldNavAway();
-  }
-
-  componentDidUpdate() {
-    console.log('[componentDidUpdate]');
-    this.shouldNavAway();
-  }
-
   render() {
     return (
       <>
@@ -66,8 +49,4 @@ class CommentBox extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return { auth: state.auth };
-}
-
-export default connect(mapStateToProps, actions)(CommentBox);
+export default connect(null, actions)(CommentBox);
