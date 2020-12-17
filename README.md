@@ -65,6 +65,14 @@ SASS \*\* NOTE npm install node-sass@4.14.1 (version 5 is not compatible);
 Version 2 is to refactor and make use of react-router-dom
 npm install --save react-router-dom
 
+Middlewares
+As we have seen that we use this function from redux when we create store
+const store = createStore(
+reducers,
+initialState,
+applyMiddleware(reduxPromise)
+);
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
